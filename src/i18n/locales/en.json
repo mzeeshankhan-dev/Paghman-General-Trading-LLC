@@ -1,0 +1,227 @@
+{
+  "meta": { "dir": "ltr", "name": "English" },
+  "nav": {
+    "home": "Home", "about": "About Us", "products": "Products", "services": "Services",
+    "industries": "Industries", "gallery": "Gallery", "careers": "Careers", "contact": "Contact Us"
+  },
+  "common": {
+    "viewDetails": "View Details", "learnMore": "Learn More", "exploreProducts": "Explore Products",
+    "contactUs": "Contact Us", "readMore": "Read More", "applyNow": "Apply Now", "sendMessage": "Send Message",
+    "submit": "Submit", "submitting": "Sending...", "getQuote": "Get a Quote", "seeAll": "See All",
+    "backHome": "Back to Home", "since": "Since", "categories": "Categories", "all": "All"
+  },
+  "hero": {
+    "eyebrow": "Dubai, United Arab Emirates",
+    "title": "Your Trusted Gateway to Global Trade",
+    "subtitle": "Al Mawarid General Trading LLC connects manufacturers and markets across the world — delivering textiles, food products, industrial supplies and more with unmatched reliability from the heart of Dubai.",
+    "stats": [
+      { "value": 18, "suffix": "+", "label": "Years of Experience" },
+      { "value": 45, "suffix": "+", "label": "Countries Served" },
+      { "value": 1200, "suffix": "+", "label": "Products Delivered" },
+      { "value": 600, "suffix": "+", "label": "Happy Clients" }
+    ]
+  },
+  "home": {
+    "productsTitle": "Our Product Categories",
+    "productsSubtitle": "A diverse portfolio sourced and delivered with consistent quality across six specialised categories.",
+    "servicesTitle": "What We Do",
+    "servicesSubtitle": "End-to-end trading solutions built around your supply chain, from sourcing to final delivery.",
+    "whyUsTitle": "Why Choose Us",
+    "whyUsSubtitle": "Two decades of trading expertise, built on trust, precision and long-term partnerships.",
+    "industriesTitle": "Industries We Serve",
+    "industriesSubtitle": "Supporting diverse sectors with tailored sourcing and distribution solutions.",
+    "testimonialsTitle": "What Our Clients Say",
+    "testimonialsSubtitle": "Trusted by importers, distributors and retailers around the world.",
+    "partnersTitle": "Trusted By Global Partners",
+    "faqTitle": "Frequently Asked Questions",
+    "faqSubtitle": "Answers to the questions we hear most from partners and clients.",
+    "newsTitle": "News & Updates",
+    "newsSubtitle": "The latest from our company and the markets we serve.",
+    "aboutTitle": "Two Decades of Trading Excellence",
+    "aboutText": "Founded in Dubai, Al Mawarid General Trading LLC has grown from a single-office trading desk into a multi-category import-export house serving clients across five continents. We combine local market intelligence with a global logistics network to move goods reliably, on time, every time.",
+    "ctaTitle": "Ready to Start Trading With Us?",
+    "ctaSubtitle": "Tell us what you need — our team will respond with a tailored quote within one business day."
+  },
+  "about": {
+    "eyebrow": "About Our Company",
+    "title": "Building Global Trade Relationships Since 2006",
+    "intro": "Al Mawarid General Trading LLC is a Dubai-headquartered general trading company specialising in the import, export and wholesale distribution of textiles, garments, food products, industrial supplies and electrical products.",
+    "storyTitle": "Our Story",
+    "story": "What began as a small textile trading desk in Deira has grown into a diversified trading house with warehousing, logistics and distribution capability spanning the GCC, South Asia, Africa and Europe. Our founders believed that trade, done honestly and efficiently, builds lasting prosperity — a principle that still guides every shipment we handle.",
+    "missionTitle": "Our Mission",
+    "mission": "To connect manufacturers and markets through reliable, transparent and efficient trading services that create value for every partner in the supply chain.",
+    "visionTitle": "Our Vision",
+    "vision": "To be the most trusted general trading house in the Middle East, recognised for quality, integrity and the strength of our global network.",
+    "valuesTitle": "Our Core Values",
+    "values": [
+      { "title": "Integrity", "desc": "We do business honestly, honouring every commitment we make to clients and partners." },
+      { "title": "Reliability", "desc": "Consistent quality and on-time delivery, shipment after shipment." },
+      { "title": "Partnership", "desc": "We build long-term relationships, not one-off transactions." },
+      { "title": "Excellence", "desc": "We hold every product and process to a high, consistent standard." }
+    ],
+    "timelineTitle": "Our Journey",
+    "timeline": [
+      { "year": "2006", "title": "Company Founded", "desc": "Started as a textile trading office in Dubai's Deira district." },
+      { "year": "2011", "title": "First Warehouse", "desc": "Opened our first dedicated warehousing facility in Jebel Ali." },
+      { "year": "2015", "title": "Regional Expansion", "desc": "Extended distribution network across the GCC and South Asia." },
+      { "year": "2019", "title": "New Product Lines", "desc": "Added industrial supplies and electrical products to our portfolio." },
+      { "year": "2024", "title": "Global Reach", "desc": "Now serving clients in over 45 countries across five continents." }
+    ],
+    "statsTitle": "Al Mawarid in Numbers"
+  },
+  "products": {
+    "eyebrow": "Our Products",
+    "title": "Quality Products, Sourced Globally",
+    "subtitle": "Six specialised categories backed by rigorous quality control and reliable supply chains.",
+    "categories": [
+      {
+        "id": "textiles", "title": "Textiles",
+        "desc": "Premium cotton, polyester and blended fabrics sourced from certified mills for wholesale and industrial buyers."
+      },
+      {
+        "id": "garments", "title": "Garments",
+        "desc": "Ready-made apparel for men, women and children, manufactured to international quality and safety standards."
+      },
+      {
+        "id": "fabrics", "title": "Fabrics",
+        "desc": "A wide range of woven and non-woven fabrics for fashion, upholstery and technical applications."
+      },
+      {
+        "id": "food", "title": "Food Products",
+        "desc": "Rice, pulses, spices and packaged foods sourced and stored under strict food-safety protocols."
+      },
+      {
+        "id": "industrial", "title": "Industrial Supplies",
+        "desc": "Tools, safety equipment and raw materials supporting construction and manufacturing clients."
+      },
+      {
+        "id": "electrical", "title": "Electrical Products",
+        "desc": "Cables, switchgear and lighting solutions from trusted manufacturers, certified for regional standards."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Our Services",
+    "title": "End-to-End Trading Solutions",
+    "subtitle": "From sourcing to final-mile delivery, we manage every link in your supply chain.",
+    "list": [
+      { "id": "import", "title": "Import", "desc": "Reliable import services with full customs documentation and compliance handling across the UAE." },
+      { "id": "export", "title": "Export", "desc": "Efficient export operations connecting regional manufacturers with buyers worldwide." },
+      { "id": "wholesale", "title": "Wholesale", "desc": "Competitive bulk pricing and flexible order volumes for distributors and retailers." },
+      { "id": "sourcing", "title": "Global Sourcing", "desc": "A vetted network of manufacturers across Asia, Africa and Europe matched to your specifications." },
+      { "id": "logistics", "title": "Logistics", "desc": "End-to-end freight coordination by sea, air and land, backed by real-time shipment tracking." },
+      { "id": "distribution", "title": "Distribution", "desc": "Regional warehousing and last-mile distribution to keep your shelves consistently stocked." }
+    ]
+  },
+  "whyUs": {
+    "list": [
+      { "title": "Trusted Supplier", "desc": "Two decades of consistent, honest trading relationships across the region." },
+      { "title": "Competitive Pricing", "desc": "Direct manufacturer relationships mean better prices, passed on to you." },
+      { "title": "Worldwide Shipping", "desc": "A logistics network covering over 45 countries by sea, air and land." },
+      { "title": "Quality Assurance", "desc": "Every shipment undergoes rigorous quality checks before dispatch." },
+      { "title": "Experienced Team", "desc": "A specialised team with deep category and market expertise." },
+      { "title": "Fast Delivery", "desc": "Optimised logistics routes for shorter, more predictable lead times." }
+    ]
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "title": "Sector-Specific Trading Expertise",
+    "subtitle": "We tailor sourcing, quality control and logistics to the standards each industry demands.",
+    "list": [
+      { "title": "Retail & Fashion", "desc": "Garments and textiles for retail chains and boutique brands." },
+      { "title": "Hospitality", "desc": "Linens, food supplies and furnishings for hotels and restaurants." },
+      { "title": "Construction", "desc": "Industrial supplies and materials for contractors and developers." },
+      { "title": "Manufacturing", "desc": "Raw materials and components for regional production facilities." },
+      { "title": "Healthcare", "desc": "Textiles and supplies meeting healthcare hygiene requirements." },
+      { "title": "Automotive", "desc": "Electrical components and industrial supplies for the auto sector." },
+      { "title": "Agriculture", "desc": "Packaging and food-grade materials for agri-businesses." },
+      { "title": "Energy", "desc": "Cabling and electrical products for energy and utility projects." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Our Gallery",
+    "title": "A Glimpse Into Our Operations",
+    "subtitle": "From our Dubai warehouses to the ports we ship through — see our trading network in action."
+  },
+  "testimonials": {
+    "list": [
+      { "name": "Ahmed Al Farsi", "role": "Procurement Director, Riyadh", "text": "Al Mawarid has been our textile supplier for six years. Consistent quality and always on schedule." },
+      { "name": "Sara Khan", "role": "Retail Buyer, Karachi", "text": "Their sourcing team found us exactly the garment specifications we needed, faster than any competitor." },
+      { "name": "James Whitfield", "role": "Distribution Manager, London", "text": "Professional, transparent, and easy to work with across every shipment we've placed." },
+      { "name": "Fatima Noor", "role": "Operations Head, Nairobi", "text": "Their logistics team handled complex customs requirements flawlessly. Highly recommended." },
+      { "name": "Rui Chen", "role": "Import Manager, Shanghai", "text": "Competitive pricing without compromising on quality — exactly what we look for in a partner." },
+      { "name": "Layla Haddad", "role": "Founder, Beirut Boutique", "text": "A dependable wholesale partner who genuinely cares about our business growing." }
+    ]
+  },
+  "faq": {
+    "list": [
+      { "q": "Which regions does Al Mawarid ship to?", "a": "We currently ship to over 45 countries across the GCC, South Asia, Africa, Europe and beyond." },
+      { "q": "What is your minimum order quantity?", "a": "MOQs vary by product category — our sales team will confirm exact figures based on your requirements." },
+      { "q": "Do you offer custom sourcing?", "a": "Yes, our global sourcing team can locate and vet manufacturers for specifications not in our standard catalogue." },
+      { "q": "How long does shipping typically take?", "a": "Lead times depend on the destination and shipping method, ranging from 5 days by air to 6 weeks by sea." },
+      { "q": "Can I request product samples?", "a": "Yes, samples are available for most product categories upon request." },
+      { "q": "How do I get a price quote?", "a": "Submit your requirements through our contact form or WhatsApp, and our team will respond within one business day." }
+    ]
+  },
+  "news": {
+    "list": [
+      { "title": "Al Mawarid Expands Warehouse Capacity in Jebel Ali", "date": "May 2026", "excerpt": "New 10,000 sqm facility increases our storage and distribution capability across the GCC." },
+      { "title": "New Electrical Products Line Launched", "date": "March 2026", "excerpt": "We've added certified cabling and lighting solutions to serve the energy and construction sectors." },
+      { "title": "Partnership with South Asian Textile Mills", "date": "January 2026", "excerpt": "A new sourcing agreement strengthens our textile supply chain and pricing competitiveness." }
+    ]
+  },
+  "careers": {
+    "eyebrow": "Careers",
+    "title": "Build Your Career With Us",
+    "subtitle": "We're always looking for talented, driven people to join our growing trading house.",
+    "whyJoinTitle": "Why Work at Al Mawarid",
+    "whyJoin": [
+      { "title": "Global Exposure", "desc": "Work with partners and clients across 45+ countries." },
+      { "title": "Growth Opportunities", "desc": "Clear career paths and internal promotion across departments." },
+      { "title": "Collaborative Culture", "desc": "A diverse, supportive team that values every contribution." }
+    ],
+    "openPositions": "Open Positions",
+    "jobs": [
+      { "title": "Import & Export Coordinator", "dept": "Operations", "location": "Dubai, UAE", "type": "Full-time" },
+      { "title": "Global Sourcing Specialist", "dept": "Procurement", "location": "Dubai, UAE", "type": "Full-time" },
+      { "title": "Logistics Manager", "dept": "Supply Chain", "location": "Jebel Ali, UAE", "type": "Full-time" },
+      { "title": "Wholesale Sales Executive", "dept": "Sales", "location": "Dubai, UAE", "type": "Full-time" },
+      { "title": "Quality Assurance Officer", "dept": "Quality", "location": "Jebel Ali, UAE", "type": "Full-time" }
+    ],
+    "noOpening": "Don't see the right role? Send us your CV anyway.",
+    "sendCv": "Send Your CV"
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Let's Start a Conversation",
+    "subtitle": "Reach out for quotes, sourcing enquiries or partnership opportunities — we typically respond within one business day.",
+    "form": {
+      "name": "Full Name", "email": "Email Address", "phone": "Phone Number",
+      "subject": "Subject", "message": "Message", "namePh": "John Smith",
+      "emailPh": "john@company.com", "phonePh": "+971 50 000 0000",
+      "subjectPh": "Product enquiry, quote request, partnership...",
+      "messagePh": "Tell us what you're looking for...",
+      "success": "Thank you! Your message has been sent — we'll be in touch shortly.",
+      "error": "Something went wrong. Please try again or contact us directly."
+    },
+    "info": {
+      "addressTitle": "Office Address", "address": "Office 1204, Al Mawarid Tower, Sheikh Zayed Road, Dubai, UAE",
+      "emailTitle": "Email Us", "email": "info@almawaridtrading.com",
+      "phoneTitle": "Call Us", "phone": "+971 4 000 0000",
+      "hoursTitle": "Working Hours", "hours": "Sunday – Thursday, 9:00 AM – 6:00 PM"
+    },
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "about": "A Dubai-based general trading company delivering textiles, garments, food products, industrial and electrical supplies to partners across the globe.",
+    "quickLinks": "Quick Links", "ourServices": "Services", "ourProducts": "Products",
+    "newsletterTitle": "Subscribe to Our Newsletter",
+    "newsletterText": "Get the latest updates on products, services and industry news.",
+    "newsletterPh": "Enter your email", "subscribe": "Subscribe",
+    "rights": "All rights reserved.", "madeWith": "Trading Excellence from Dubai, UAE"
+  },
+  "notFound": {
+    "title": "Page Not Found", "subtitle": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to Homepage"
+  }
+}
