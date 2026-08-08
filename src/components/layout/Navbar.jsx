@@ -10,9 +10,7 @@ const NAV_ITEMS = [
   { key: "about", to: "/about" },
   { key: "products", to: "/products" },
   { key: "services", to: "/services" },
-  { key: "industries", to: "/industries" },
   { key: "gallery", to: "/gallery" },
-  { key: "careers", to: "/careers" },
   { key: "contact", to: "/contact" },
 ];
 
@@ -49,16 +47,16 @@ export default function Navbar({ theme, toggleTheme }) {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-sm" : "bg-transparent"
+        scrolled ? "glass shadow-sm" : "bg-[#193e72]"
       }`}
     >
       <nav className="container-page flex h-20 items-center justify-between" aria-label="Main navigation">
         <NavLink to="/" className="flex items-center gap-2.5 shrink-0" aria-label="Al Mawarid General Trading LLC — Home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-800 text-gold-400 dark:bg-gold-500 dark:text-navy-900">
-            <Ship className="h-5 w-5" aria-hidden="true" />
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-800 text-gold-400 dark:bg-gold-500 dark:text-navy-900 overflow-hidden">
+            <img className="h-full w-full"  src="./logo.png" alt="logo" />
           </span>
           <span className={`font-heading text-lg font-bold leading-tight ${scrolled ? "text-navy-900 dark:text-white" : "text-white"}`}>
-            Al Mawarid
+            Paghman
             <span className="block text-[10px] font-medium uppercase tracking-[0.25em] text-gold-500">General Trading</span>
           </span>
         </NavLink>
@@ -111,7 +109,7 @@ export default function Navbar({ theme, toggleTheme }) {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute end-0 mt-2 w-40 overflow-hidden rounded-xl border border-slate-200 bg-white py-1 shadow-xl dark:border-navy-700 dark:bg-navy-900"
+                  className="absolute inset-e-0 mt-2 w-40 overflow-hidden rounded-xl border border-slate-200 bg-white py-1 shadow-xl dark:border-navy-700 dark:bg-navy-900"
                 >
                   {LANGUAGES.map((lang) => (
                     <li key={lang.code}>
@@ -149,7 +147,7 @@ export default function Navbar({ theme, toggleTheme }) {
             {theme === "dark" ? <Sun className="h-4.5 w-4.5" aria-hidden="true" /> : <Moon className="h-4.5 w-4.5" aria-hidden="true" />}
           </button>
 
-          <NavLink to="/contact" className="btn-primary !py-2.5 !px-5 text-xs">
+          <NavLink to="/contact" className="btn-primary py-2.5! px-5! text-xs">
             {t("common.getQuote")}
           </NavLink>
         </div>

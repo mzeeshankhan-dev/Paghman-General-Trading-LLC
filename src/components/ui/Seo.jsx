@@ -3,7 +3,7 @@ import { useEffect } from "react";
 /** Lightweight, dependency-free SEO helper: sets the tab title + meta description per page. */
 export default function Seo({ title, description }) {
   useEffect(() => {
-    const fullTitle = title ? `${title} | Al Mawarid General Trading LLC` : "Al Mawarid General Trading LLC";
+    const fullTitle = title ? `${title} | Paghman General Trading LLC` : " Paghman General Trading LLC";
     document.title = fullTitle;
 
     if (description) {

@@ -49,6 +49,7 @@
 
 html {
   scroll-behavior: smooth;
+  width:100vw;
 }
 
 html.font-urdu body, html.font-urdu h1, html.font-urdu h2, html.font-urdu h3,

@@ -14,31 +14,17 @@ export default function Hero() {
   const stats = t("hero.stats", { returnObjects: true }) || [];
 
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-950 text-white">
-      <Swiper
-        modules={[Autoplay, EffectFade]}
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+    <section className="relative flex min-h-screen items-center overflow-hidden text-white">
+      {/* Background Video */}
+      <video
+        autoPlay
         loop
-        className="absolute inset-0 h-full w-full"
+        muted
+        playsInline
+        className="absolute inset-0 h-screen w-screen object-cover"
       >
-        {heroSlides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="relative h-full w-full">
-              <img
-                src={slide.src}
-                alt=""
-                role="presentation"
-                loading="eager"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/75 to-navy-950/40" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <source src="/Hero-video.mp4" type="video/mp4" />
+      </video>
 
       <div className="container-page relative pt-24">
         <motion.div
