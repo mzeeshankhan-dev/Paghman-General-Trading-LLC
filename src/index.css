@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .eyebrow {
-  @apply inline-flex items-center gap-2 rounded-full bg-gold-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-700 dark:bg-gold-500/10 dark:text-gold-300;
+  @apply inline-flex items-center gap-2 rounded-full bg-gold-200 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-900 dark:bg-gold-500/10 dark:text-gold-300;
 }
 
 .card {
