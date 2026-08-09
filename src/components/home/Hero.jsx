@@ -85,10 +85,10 @@ export default function Hero() {
         >
           {items.map((stat) => (
             <div key={stat.label} className="px-3">
-              <div className="font-heading text-lg font-bold text-gold-400 sm:text-2xl lg:text-4xl">
+              <div className="font-heading text-lg font-bold text-gold-400 sm:text-xl lg:text-3xl">
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-white/60 sm:text-sm">{stat.label}</p>
+              <p className="mt-1 text-[10px] font-medium uppercase tracking-wider text-white/60 sm:text-xs">{stat.label}</p>
             </div>
           ))}
         </motion.div>

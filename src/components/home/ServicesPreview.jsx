@@ -11,11 +11,11 @@ export default function ServicesPreview() {
   const services = t("services.list", { returnObjects: true }) || [];
 
   return (
-    <section className="section-y">
+    <section className="section-y bg-gray-200">
       <div className="container-page">
         <SectionHeading eyebrow={t("services.eyebrow")} title={t("home.servicesTitle")} subtitle={t("home.servicesSubtitle")} />
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
               key={service.id}

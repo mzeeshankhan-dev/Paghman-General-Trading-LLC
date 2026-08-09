@@ -15,8 +15,8 @@
     "title": "GLOBAL LOGISTICS & CARGO SOLUTIONS WITH PAGHMAN",
     "subtitle": "Connecting businesses with reliable import, export and wholesale trading solutions from Dubai to markets worldwide.",
     "stats": [
-      { "value": 18, "suffix": "+", "label": "Years of Experience" },
-      { "value": 45, "suffix": "+", "label": "Countries Served" },
+      { "value": 25, "suffix": "+", "label": "Years of Experience" },
+      { "value": 15, "suffix": "+", "label": "Countries Served" },
       { "value": 1200, "suffix": "+", "label": "Products Delivered" },
       { "value": 600, "suffix": "+", "label": "Happy Clients" }
     ]
@@ -24,7 +24,7 @@
   "home": {
     "productsTitle": "Our Product Categories",
     "productsSubtitle": "A diverse portfolio sourced and delivered with consistent quality across six specialised categories.",
-    "servicesTitle": "What We Do",
+    "servicesTitle": "Our Import & Export Services",
     "servicesSubtitle": "End-to-end trading solutions built around your supply chain, from sourcing to final delivery.",
     "whyUsTitle": "Why Choose Us",
     "whyUsSubtitle": "Two decades of trading expertise, built on trust, precision and long-term partnerships.",

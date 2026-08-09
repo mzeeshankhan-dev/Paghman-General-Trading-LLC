@@ -9,19 +9,12 @@ export default function SectionHeading({ eyebrow, title, subtitle, align = "cent
 
   return (
     <Reveal className={`flex max-w-2xl flex-col gap-4 ${alignment}`}>
-      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <h2
-        className={`text-3xl font-bold tracking-tight sm:text-4xl ${
-          light ? "text-white" : "text-navy-900 dark:text-white"
-        }`}
+        className={`text-2xl font-semibold tracking-tight sm:text-3xl ${light ? "text-white" : "text-navy-900 dark:text-white"
+          }`}
       >
         {title}
       </h2>
-      {subtitle && (
-        <p className={`text-base leading-relaxed sm:text-lg ${light ? "text-white/75" : "text-slate-500 dark:text-slate-400"}`}>
-          {subtitle}
-        </p>
-      )}
     </Reveal>
   );
 }

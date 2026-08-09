@@ -7,7 +7,6 @@ import ServicesPreview from "../components/home/ServicesPreview";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import IndustriesPreview from "../components/home/IndustriesPreview";
 import Testimonials from "../components/home/Testimonials";
-import Partners from "../components/home/Partners";
 import FAQSection from "../components/home/FAQSection";
 import NewsSection from "../components/home/NewsSection";
 import CTASection from "../components/home/CTASection";
@@ -19,10 +18,9 @@ export default function Home() {
     <>
       <Seo title={t("nav.home")} description={t("hero.subtitle")} />
       <Hero />
-      <Partners />
-      <ProductsPreview />
-      <AboutPreview />
       <ServicesPreview />
+      {/* <ProductsPreview /> */}
+      <AboutPreview />
       <WhyChooseUs />
       <IndustriesPreview />
       <Testimonials />
