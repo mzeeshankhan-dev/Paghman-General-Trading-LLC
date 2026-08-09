@@ -10,7 +10,5 @@ import App from "./App.jsx";
 applyLanguage(i18n.language);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
     <App />
-  </StrictMode>
 );
