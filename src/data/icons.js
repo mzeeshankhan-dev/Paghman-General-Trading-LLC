@@ -1,7 +1,24 @@
 import {
-  Ship, PackageCheck, Boxes, Globe2, Truck, Warehouse,
-  ShieldCheck, BadgeDollarSign, PlaneTakeoff, BadgeCheck, Users, Zap,
-  ShoppingBag, Hotel, HardHat, Factory, HeartPulse, Car, Wheat, Gauge,
+  Ship,
+  PackageCheck,
+  Boxes,
+  Globe2,
+  Truck,
+  Warehouse,
+  ShieldCheck,
+  BadgeDollarSign,
+  PlaneTakeoff,
+  BadgeCheck,
+  Users,
+  Zap,
+  ClipboardList,
+  Globe,
+  FileCheck2,
+  Package,
+  HeartPulse,
+  Car,
+  Wheat,
+  Gauge,
 } from "lucide-react";
 
 export const serviceIcons = {
@@ -13,6 +30,19 @@ export const serviceIcons = {
   distribution: Warehouse,
 };
 
-export const whyUsIcons = [ShieldCheck, BadgeDollarSign, PlaneTakeoff, BadgeCheck, Users, Zap];
+export const whyUsIcons = [
+  ShieldCheck,
+  BadgeDollarSign,
+  PlaneTakeoff,
+  BadgeCheck,
+  Users,
+  Zap,
+];
 
-export const industryIcons = [ShoppingBag, Hotel, HardHat, Factory, HeartPulse, Car, Wheat, Gauge];
+export const industryIcons = [
+  ClipboardList,
+  Globe,
+  FileCheck2,
+  Package,
+  Truck,
+];

@@ -28,7 +28,7 @@
     "servicesSubtitle": "End-to-end trading solutions built around your supply chain, from sourcing to final delivery.",
     "whyUsTitle": "Why Choose Us",
     "whyUsSubtitle": "Two decades of trading expertise, built on trust, precision and long-term partnerships.",
-    "industriesTitle": "Industries We Serve",
+    "industriesTitle": "Our Cargo Handling Process",
     "industriesSubtitle": "Supporting diverse sectors with tailored sourcing and distribution solutions.",
     "testimonialsTitle": "What Our Clients Say",
     "testimonialsSubtitle": "Trusted by importers, distributors and retailers around the world.",
@@ -37,8 +37,8 @@
     "faqSubtitle": "Answers to the questions we hear most from partners and clients.",
     "newsTitle": "News & Updates",
     "newsSubtitle": "The latest from our company and the markets we serve.",
-    "aboutTitle": "Two Decades of Trading Excellence",
-    "aboutText": "Founded in Dubai, Al Mawarid General Trading LLC has grown from a single-office trading desk into a multi-category import-export house serving clients across five continents. We combine local market intelligence with a global logistics network to move goods reliably, on time, every time.",
+    "aboutTitle": "Connecting Global Markets Through Trusted Trade",
+    "aboutText": "Paghman General Trading LLC is a Dubai-based general trading company engaged in international import and export activities. We connect businesses with products and suppliers across global markets, with trading activity spanning textiles, fabrics, garments and other commercial products.",
     "ctaTitle": "Ready to Start Trading With Us?",
     "ctaSubtitle": "Tell us what you need — our team will respond with a tailored quote within one business day."
   },
@@ -128,14 +128,12 @@
     "title": "Sector-Specific Trading Expertise",
     "subtitle": "We tailor sourcing, quality control and logistics to the standards each industry demands.",
     "list": [
-      { "title": "Retail & Fashion", "desc": "Garments and textiles for retail chains and boutique brands." },
-      { "title": "Hospitality", "desc": "Linens, food supplies and furnishings for hotels and restaurants." },
-      { "title": "Construction", "desc": "Industrial supplies and materials for contractors and developers." },
-      { "title": "Manufacturing", "desc": "Raw materials and components for regional production facilities." },
-      { "title": "Healthcare", "desc": "Textiles and supplies meeting healthcare hygiene requirements." },
-      { "title": "Automotive", "desc": "Electrical components and industrial supplies for the auto sector." },
-      { "title": "Agriculture", "desc": "Packaging and food-grade materials for agri-businesses." },
-      { "title": "Energy", "desc": "Cabling and electrical products for energy and utility projects." }
+      { "title": "Product Inquiry", "desc": "Share your product requirements, specifications and quantity." },
+      { "title": "Global Sourcing", "desc": "We identify suitable products and international suppliers." },
+      { "title": "Import & Documentation", "desc": "Products are coordinated through the required import and trade procedures." },
+      { "title": "Quality & Warehouse", "desc": "Products are received, checked and prepared for supply." },
+      { "title": "Export & Delivery", "desc": "Orders are prepared for export and supplied to the intended market." }
+
     ]
   },
   "gallery": {

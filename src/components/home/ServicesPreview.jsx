@@ -11,7 +11,7 @@ export default function ServicesPreview() {
   const services = t("services.list", { returnObjects: true }) || [];
 
   return (
-    <section className="section-y bg-gray-200">
+    <section className="section-y bg-gray-200  dark:bg-navy-900/40">
       <div className="container-page">
         <SectionHeading eyebrow={t("services.eyebrow")} title={t("home.servicesTitle")} subtitle={t("home.servicesSubtitle")} />
 

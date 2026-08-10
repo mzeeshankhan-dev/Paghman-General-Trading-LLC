@@ -60,5 +60,4 @@ export const partnerLogos = Array.from({ length: 8 }, (_, i) => ({
 }));
 
 export const teamAndOfficeImage = img("dubai-office-team", 1200, 900);
-export const aboutStoryImage = img("trading-office-desk", 1200, 900);
 export const careersImage = img("office-team-collaboration", 1200, 900);

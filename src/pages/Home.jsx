@@ -19,14 +19,15 @@ export default function Home() {
       <Seo title={t("nav.home")} description={t("hero.subtitle")} />
       <Hero />
       <ServicesPreview />
-      {/* <ProductsPreview /> */}
       <AboutPreview />
-      <WhyChooseUs />
       <IndustriesPreview />
+      <WhyChooseUs />
       <Testimonials />
       <NewsSection />
       <FAQSection />
       <CTASection />
+
+      {/* <ProductsPreview /> */}
     </>
   );
 }

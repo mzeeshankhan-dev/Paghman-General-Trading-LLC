@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Reveal from "../ui/Reveal";
-import { aboutStoryImage } from "../../data/images";
+import aboutImage from "../../assets/images/about-Img.webp"
 
 export default function AboutPreview() {
   const { t } = useTranslation();
@@ -13,10 +13,10 @@ export default function AboutPreview() {
       <div className="container-page grid items-center gap-12 lg:grid-cols-2">
         <Reveal direction="right" className="relative">
           <div className="overflow-hidden rounded-3xl">
-            <img src={aboutStoryImage} alt="Team at Al Mawarid General Trading" loading="lazy" className="h-105 w-full object-cover" />
+            <img src={aboutImage} alt="Team at Al Mawarid General Trading" loading="lazy" className="h-105 w-full object-cover" />
           </div>
           <div className="absolute -bottom-6 -start-s-6 hidden rounded-2xl bg-gold-500 px-6 py-5 text-navy-900 shadow-xl sm:block">
-            <p className="font-heading text-3xl font-bold">18+</p>
+            <p className="font-heading text-3xl font-bold">25+</p>
             <p className="text-xs font-semibold uppercase tracking-wider">{t("hero.stats.0.label")}</p>
           </div>
         </Reveal>
