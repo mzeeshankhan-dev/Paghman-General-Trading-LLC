@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Ship, Mail, Phone, MapPin, Send } from "lucide-react";
+import footerImg from "../../assets/images/footerImg.webp"
 
 // lucide-react no longer ships brand/social icons, so these are small inline SVGs.
 function FacebookIcon(props) {
@@ -58,13 +59,21 @@ export default function Footer() {
 
   return (
     <footer className="bg-navy-950 text-white/70">
-      <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
+      <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] bg-cover bg-center bg-no-repeat"
+        style={{
+
+          backgroundImage: `      linear-gradient(
+        to right,
+        rgba(7, 29, 54, 0.9),
+        rgba(7, 29, 54, 0.4)
+      ), url(${footerImg})`,
+        }}>
         <div className="flex flex-col gap-4">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-500 text-navy-900">
-              <Ship className="h-5 w-5" aria-hidden="true" />
+              <img src="logo2.png" alt="paghman logo" />
             </span>
-            <span className="font-heading text-lg font-bold text-white">Al Mawarid</span>
+            <span className="font-heading text-lg/tight font-bold text-white">Paghman <br /> <span className="text-gold-400 text-xs">General Trading </span></span>
           </Link>
           <p className="max-w-xs text-sm leading-relaxed">{t("footer.about")}</p>
           <div className="flex gap-3 pt-2">
@@ -108,28 +117,6 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">{t("footer.newsletterTitle")}</h3>
-          <p className="mb-4 text-sm">{t("footer.newsletterText")}</p>
-          <form onSubmit={handleSubscribe} className="flex flex-col gap-3 sm:flex-row" noValidate>
-            <label htmlFor="newsletter-email" className="sr-only">
-              {t("footer.newsletterPh")}
-            </label>
-            <input
-              id="newsletter-email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={t("footer.newsletterPh")}
-              className="w-full rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:border-gold-400 focus:outline-none"
-            />
-            <button type="submit" className="btn-primary shrink-0 !px-5 !py-2.5 text-xs">
-              <Send className="h-3.5 w-3.5" aria-hidden="true" />
-              {t("footer.subscribe")}
-            </button>
-          </form>
-          {subscribed && <p className="mt-2 text-xs text-gold-400">{t("contact.form.success")}</p>}
-
           <ul className="mt-6 flex flex-col gap-3 text-sm">
             <li className="flex items-start gap-2.5">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold-400" aria-hidden="true" />
@@ -149,14 +136,15 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
       </div>
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col items-center justify-between gap-2 py-6 text-xs sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} Al Mawarid General Trading LLC. {t("footer.rights")}
+            &copy; {new Date().getFullYear()} Paghman General Trading LLC. {t("footer.rights")}
           </p>
-          <p className="text-white/40">{t("footer.madeWith")}</p>
+          <p className="text-white/80">Designed & Developed by <b> Muhammad Zeeshan Khan</b></p>
         </div>
       </div>
     </footer>

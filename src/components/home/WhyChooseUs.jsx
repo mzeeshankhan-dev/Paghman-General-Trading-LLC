@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           {items.map((item, index) => {
             const Icon = whyUsIcons[index];
             return (
-              <Reveal key={item.title} delay={index * 0.06} className="flex flex-col gap-4 bg-white/80 p-8 transition-colors hover:bg-gray-300 dark:bg-navy-900/40 dark:text-white">
+              <Reveal key={item.title} delay={index * 0.06} className="flex flex-col gap-4 bg-white/80 p-8 transition-colors hover:bg-gray-300 dark:hover:bg-navy-800 dark:bg-navy-900/40 dark:text-white">
                 {Icon && (
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500/15 text-gold-400">
                     <Icon className="h-6 w-6" aria-hidden="true" />
