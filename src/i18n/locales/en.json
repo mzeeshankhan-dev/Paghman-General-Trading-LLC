@@ -26,9 +26,10 @@
     "productsSubtitle": "A diverse portfolio sourced and delivered with consistent quality across six specialised categories.",
     "servicesTitle": "Our Import & Export Services",
     "servicesSubtitle": "End-to-end trading solutions built around your supply chain, from sourcing to final delivery.",
-    "whyUsTitle": "Why Choose Us",
+    "whyUsTitle": "Why Choose Paghman",
     "whyUsSubtitle": "Two decades of trading expertise, built on trust, precision and long-term partnerships.",
     "industriesTitle": "Our Cargo Handling Process",
+    "calculatorTitle": "Freight Quote Calculator",
     "industriesSubtitle": "Supporting diverse sectors with tailored sourcing and distribution solutions.",
     "testimonialsTitle": "What Our Clients Say",
     "testimonialsSubtitle": "Trusted by importers, distributors and retailers around the world.",
@@ -117,7 +118,7 @@
     "list": [
       { "title": "Trusted Supplier", "desc": "Two decades of consistent, honest trading relationships across the region." },
       { "title": "Competitive Pricing", "desc": "Direct manufacturer relationships mean better prices, passed on to you." },
-      { "title": "Worldwide Shipping", "desc": "A logistics network covering over 45 countries by sea, air and land." },
+      { "title": "Worldwide Shipping", "desc": "A logistics network covering over 15+ countries by sea and land." },
       { "title": "Quality Assurance", "desc": "Every shipment undergoes rigorous quality checks before dispatch." },
       { "title": "Experienced Team", "desc": "A specialised team with deep category and market expertise." },
       { "title": "Fast Delivery", "desc": "Optimised logistics routes for shorter, more predictable lead times." }

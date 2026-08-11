@@ -11,13 +11,13 @@ export default function IndustriesPreview() {
   return (
     <section className="section-y bg-gray-200 dark:bg-navy-900/40">
       <div className="container-page">
-        <SectionHeading eyebrow={t("industries.eyebrow")} title={t("home.industriesTitle")} subtitle={t("home.industriesSubtitle")} />
+        <SectionHeading title={t("home.industriesTitle")} />
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-3 lg:grid-cols-4 min-[700px]:overflow-x-visible max-[699px]:overflow-x-auto max-[699px]:flex scrollbar-none w-full ">
+        <div className="mt-12 grid gap-5 sm:grid-cols-3 lg:grid-cols-4 min-[700px]:overflow-x-visible max-[699px]:overflow-x-auto max-[699px]:overflow-y-hidden max-[699px]:flex scrollbar-none w-full ">
           {items.map((item, index) => {
             const Icon = industryIcons[index];
             return (
-              <Reveal key={item.title} delay={index * 0.05} className=" relative flex flex-col items-center gap-3 p-5 text-center min-w-50">
+              <Reveal key={item.title} delay={index * 0.05} className=" relative flex flex-col items-center gap-3 p-5 text-center min-w-50 h-full:">
                 {Icon && (
                   <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gold-50 text-gold-600 dark:bg-gold-500/10 dark:text-gold-300">
                     <Icon className="h-6 w-6" aria-hidden="true" />

@@ -10,6 +10,7 @@ import Testimonials from "../components/home/Testimonials";
 import FAQSection from "../components/home/FAQSection";
 import NewsSection from "../components/home/NewsSection";
 import CTASection from "../components/home/CTASection";
+import FreightCalculator from "../components/home/FreightCalculator";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -21,12 +22,13 @@ export default function Home() {
       <ServicesPreview />
       <AboutPreview />
       <IndustriesPreview />
+      <FreightCalculator/>
       <WhyChooseUs />
       <Testimonials />
-      <NewsSection />
-      <FAQSection />
       <CTASection />
 
+      {/* <FAQSection /> */}
+      {/* <NewsSection /> */}
       {/* <ProductsPreview /> */}
     </>
   );
