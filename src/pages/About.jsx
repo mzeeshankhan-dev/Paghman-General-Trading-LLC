@@ -5,7 +5,7 @@ import PageHeader from "../components/ui/PageHeader";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
 import Counter from "../components/ui/Counter";
-import { aboutStoryImage } from "../data/images";
+// import { aboutStoryImage } from "../data/images";
 
 export default function About() {
   const { t } = useTranslation();
@@ -16,15 +16,14 @@ export default function About() {
   return (
     <>
       <Seo title={t("nav.about")} description={t("about.intro")} />
-      <PageHeader eyebrow={t("about.eyebrow")} title={t("about.title")} subtitle={t("about.intro")} />
+      <PageHeader title={t("about.title")} subtitle={t("about.intro")} />
 
       <section className="section-y">
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <Reveal direction="right" className="overflow-hidden rounded-3xl">
-            <img src={aboutStoryImage} alt="Al Mawarid trading office" loading="lazy" className="h-[420px] w-full object-cover" />
+            <img src="" alt="Al Mawarid trading office" loading="lazy" className="h-105 w-full object-cover" />
           </Reveal>
           <Reveal direction="left" className="flex flex-col gap-4">
-            <span className="eyebrow w-fit">{t("about.storyTitle")}</span>
             <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">{t("about.storyTitle")}</h2>
             <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">{t("about.story")}</p>
           </Reveal>

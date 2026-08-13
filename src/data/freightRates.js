@@ -1,43 +1,7 @@
-/**
- * ============================================================
- * PAGHMAN FREIGHT CALCULATOR - RATE CONFIGURATION
- * ============================================================
- *
- * IMPORTANT:
- * The rates below are DEMO rates only.
- *
- * Replace them with Paghman's actual rates after the client
- * provides/approves the pricing structure.
- *
- * The React calculator reads its prices from this file.
- * Therefore, you do NOT need to modify the calculator UI
- * when prices change.
- * ============================================================
- */
-
-
-/*
-|--------------------------------------------------------------------------
-| Shipment Types
-|--------------------------------------------------------------------------
-|
-| unit:
-|   kg  -> price is calculated according to weight
-|   cbm -> price is calculated according to volume
-|
-*/
-
 export const shipmentTypes = [
   {
-    value: "air",
-    label: "Air Freight",
-    unit: "kg",
-    unitLabel: "per kg",
-  },
-
-  {
     value: "sea",
-    label: "Sea Freight",
+    label: "Sea Transport",
     unit: "cbm",
     unitLabel: "per CBM",
   },
@@ -49,16 +13,6 @@ export const shipmentTypes = [
     unitLabel: "per kg",
   },
 ];
-
-
-/*
-|--------------------------------------------------------------------------
-| Countries
-|--------------------------------------------------------------------------
-|
-| Ye list bhi easily change ki ja sakti hai.
-|
-*/
 
 export const countries = [
   {
@@ -72,8 +26,8 @@ export const countries = [
   },
 
   {
-    value: "india",
-    label: "India",
+    value: "china",
+    label: "China",
   },
 
   {
@@ -82,157 +36,70 @@ export const countries = [
   },
 
   {
-    value: "tanzania",
-    label: "Tanzania",
+    value: "iran",
+    label: "Iran",
   },
 ];
 
-
-/*
-|--------------------------------------------------------------------------
-| Freight Rates
-|--------------------------------------------------------------------------
-|
-| Structure:
-|
-| shipment type
-|     ↓
-| origin
-|     ↓
-| destination
-|     ↓
-| price
-|
-| Example:
-|
-| air
-|   uae
-|      pakistan
-|         rate: 4
-|
-| Means:
-| $4 per KG
-|
-| These are DEMO numbers.
-|--------------------------------------------------------------------------
-*/
-
 export const freightRates = {
-
-  air: {
-
-    uae: {
-      pakistan: {
-        rate: 4,
-        currency: "USD",
-      },
-
-      india: {
-        rate: 4.5,
-        currency: "USD",
-      },
-
-      afghanistan: {
-        rate: 5,
-        currency: "USD",
-      },
-    },
-
-    india: {
-      pakistan: {
-        rate: 4,
-        currency: "USD",
-      },
-    },
-  },
-
 
   sea: {
 
     uae: {
       pakistan: {
         rate: 250,
-        currency: "USD",
+        currency: "AED",
       },
 
-      india: {
+      iran: {
         rate: 280,
-        currency: "USD",
+        currency: "AED",
       },
 
       afghanistan: {
         rate: 320,
-        currency: "USD",
+        currency: "AED",
       },
     },
 
-    india: {
+    china: {
       pakistan: {
         rate: 230,
-        currency: "USD",
+        currency: "AED",
       },
     },
   },
-
 
   land: {
 
     uae: {
       pakistan: {
         rate: 2,
-        currency: "USD",
+        currency: "AED",
       },
 
       afghanistan: {
         rate: 2.5,
-        currency: "USD",
+        currency: "AED",
       },
     },
 
     pakistan: {
       afghanistan: {
         rate: 1.5,
-        currency: "USD",
+        currency: "AED",
       },
     },
   },
 };
-
-
-/*
-|--------------------------------------------------------------------------
-| Additional Charges
-|--------------------------------------------------------------------------
-|
-| Agar future mein Paghman kahe ke:
-|
-| Documentation = $30
-| Handling = $50
-|
-| to yahan values change/add ki ja sakti hain.
-|
-| Filhaal demo ke liye 0 rakhe gaye hain.
-|--------------------------------------------------------------------------
-*/
 
 export const additionalCharges = {
   documentation: 0,
   handling: 0,
 };
 
-
-/*
-|--------------------------------------------------------------------------
-| Calculator Settings
-|--------------------------------------------------------------------------
-*/
-
 export const calculatorSettings = {
-
   minimumWeight: 1,
-
   minimumVolume: 0.1,
-
   decimalPlaces: 2,
-
 };

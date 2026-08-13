@@ -44,7 +44,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        className="absolute inset-0 h-full w-screen object-cover"
+        className="absolute inset-0 h-full w-screen object-cover max-[600px]:object-[10%_center]"
       >
         <source src="/Hero-video.mp4" type="video/mp4" />
       </video>
@@ -56,7 +56,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-2xl lg:max-w-3xl text-center"
         >
-          <span className="eyebrow mx-auto bg-white/10 text-gold-300">{t("hero.eyebrow")}</span>
+          <span className="eyebrow mx-auto mt-2 bg-white/10 text-gold-300">{t("hero.eyebrow")}</span>
           <h1 className="mt-5 text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl text-center">
             {t("hero.title")}
           </h1>
@@ -81,7 +81,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className=" max-w-full flex justify-between px-4 py-3 rounded-3xl bg-[#102549]"
+          className=" max-w-full flex justify-between px-4 py-3 rounded-xl bg-[#102549]"
         >
           {items.map((stat) => (
             <div key={stat.label} className="px-3">

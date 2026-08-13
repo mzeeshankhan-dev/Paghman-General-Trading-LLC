@@ -48,7 +48,7 @@ export default function Testimonials() {
             ))}
           </Swiper>
 
-          <div className="testi-pagination mt-2 flex justify-center gap-1.5 [&_.swiper-pagination-bullet]:h-2 [&_.swiper-pagination-bullet]:w-2 [&_.swiper-pagination-bullet]:rounded-full [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-gold-100" />
+          <div className="testi-pagination mt-2 flex justify-center gap-1 [&_.swiper-pagination-bullet]:h-2 [&_.swiper-pagination-bullet]:w-2 [&_.swiper-pagination-bullet]:rounded-full [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:bg-gold-300" />
 
           <button
             type="button"

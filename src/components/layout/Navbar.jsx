@@ -8,7 +8,6 @@ import { LANGUAGES, applyLanguage } from "../../i18n";
 const NAV_ITEMS = [
   { key: "home", to: "/" },
   { key: "about", to: "/about" },
-  { key: "products", to: "/products" },
   { key: "services", to: "/services" },
   { key: "gallery", to: "/gallery" },
   { key: "contact", to: "/contact" },
