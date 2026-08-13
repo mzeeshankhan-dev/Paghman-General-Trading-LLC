@@ -18,14 +18,14 @@ export default function About() {
       <Seo title={t("nav.about")} description={t("about.intro")} />
       <PageHeader title={t("about.title")} subtitle={t("about.intro")} />
 
-      <section className="section-y">
-        <div className="container-page grid items-center gap-12 lg:grid-cols-2">
-          <Reveal direction="right" className="overflow-hidden rounded-3xl">
-            <img src="" alt="Al Mawarid trading office" loading="lazy" className="h-105 w-full object-cover" />
-          </Reveal>
+      <section className="py-6">
+        <div className="container-page grid items-center justify-between gap-6 min-[850px]:grid-cols-[40%_55%]">
           <Reveal direction="left" className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">{t("about.storyTitle")}</h2>
             <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">{t("about.story")}</p>
+          </Reveal>
+          <Reveal direction="right" className="overflow-hidden rounded-3xl bg-navy-500">
+            <img src="" alt="paghman trading company" loading="lazy" className="h-80 w-full object-cover" />
           </Reveal>
         </div>
       </section>
@@ -33,17 +33,21 @@ export default function About() {
       <section className="section-y bg-slate-50 dark:bg-navy-900/40">
         <div className="container-page grid gap-6 md:grid-cols-2">
           <Reveal className="card flex flex-col gap-4 p-9">
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-800 text-gold-400">
-              <Target className="h-6 w-6" aria-hidden="true" />
-            </span>
-            <h3 className="font-heading text-xl font-semibold text-navy-900 dark:text-white">{t("about.missionTitle")}</h3>
+            <div className="flex gap-4 items-center">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500 text-navy-900">
+                <Target className="h-6 w-6 " aria-hidden="true" />
+              </span>
+              <h3 className="font-heading text-xl font-bold text-navy-900 dark:text-white">{t("about.missionTitle")}</h3>
+            </div>
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">{t("about.mission")}</p>
           </Reveal>
           <Reveal delay={0.1} className="card flex flex-col gap-4 p-9">
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500 text-navy-900">
-              <Eye className="h-6 w-6" aria-hidden="true" />
-            </span>
-            <h3 className="font-heading text-xl font-semibold text-navy-900 dark:text-white">{t("about.visionTitle")}</h3>
+            <div className="flex gap-4 items-center">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-500 text-navy-900">
+                <Eye className="h-6 w-6" aria-hidden="true" />
+              </span>
+              <h3 className="font-heading text-xl font-bold text-navy-900 dark:text-white">{t("about.visionTitle")}</h3>
+            </div>
             <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">{t("about.vision")}</p>
           </Reveal>
         </div>
@@ -64,6 +68,34 @@ export default function About() {
         </div>
       </section>
 
+      <section className="section-y">
+        <div className="container-page grid gap-6 min-[900px]:grid-cols-[40%_55%]">
+          <Reveal className="flex flex-col gap-4">
+            <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">Why Choose PAGHMAN?</h2>
+            <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 "> Nam eligendi, ex quod cupiditate possimus sapiente eum accusamus inventore eaque laudantium perspiciatis nisi corporis vitae dicta fuga dolore sed autem maxime!</p>
+            <span className="flex gap-4"> 
+              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
+            </span>
+            <span  className="flex gap-4">
+              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
+            </span>
+            <span  className="flex gap-4">
+              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
+            </span>
+            <span  className="flex gap-4">
+              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
+            </span>
+          </Reveal>
+          <Reveal className="bg-amber-600">
+               <h1>right side</h1>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="section-y bg-navy-900 text-white">
         <div className="container-page">
           <SectionHeading title={t("about.statsTitle")} light />
@@ -80,30 +112,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section-y">
-        <div className="container-page">
-          <SectionHeading title={t("about.timelineTitle")} />
-          <div className="relative mt-14 flex flex-col gap-10 before:absolute before:start-[15px] before:top-2 before:h-[calc(100%-16px)] before:w-px before:bg-slate-200 dark:before:bg-navy-800 sm:before:start-1/2">
-            {timeline.map((item, index) => (
-              <Reveal
-                key={item.year}
-                delay={index * 0.08}
-                direction={index % 2 === 0 ? "right" : "left"}
-                className={`relative flex flex-col gap-2 ps-10 sm:w-1/2 sm:ps-0 ${
-                  index % 2 === 0 ? "sm:pe-12 sm:text-end" : "sm:ps-12 sm:ms-auto"
-                }`}
-              >
-                <span className="absolute start-0 top-1 h-3 w-3 rounded-full bg-gold-500 ring-4 ring-white dark:ring-navy-950 sm:start-[calc(50%-6px)]" aria-hidden="true" />
-                <span className="w-fit rounded-full bg-navy-800 px-3 py-1 text-xs font-bold text-gold-400 dark:bg-gold-500/10">
-                  {item.year}
-                </span>
-                <h3 className="font-heading text-lg font-semibold text-navy-900 dark:text-white">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">{item.desc}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

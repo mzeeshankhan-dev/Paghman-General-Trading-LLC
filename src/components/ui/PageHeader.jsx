@@ -13,7 +13,6 @@ export default function PageHeader({ eyebrow, title, subtitle }) {
       />
       <div className="container-page relative">
         <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
-          {/* {eyebrow && <span className="eyebrow bg-white/10 text-gold-300">{eyebrow}</span>} */}
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">{title}</h1>
           {subtitle && <p className="text-lg text-white/70">{subtitle}</p>}
         </Reveal>
