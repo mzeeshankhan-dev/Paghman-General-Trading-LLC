@@ -1,13 +1,13 @@
 import Reveal from "./Reveal";
+import headerImg from "../../assets/images/headerImg.webp"
 
 /** Compact hero banner used at the top of interior pages (About, Products, etc.). */
 export default function PageHeader({ eyebrow, title, subtitle }) {
   return (
-    <section className="relative overflow-hidden bg-navy-400 pt-32 pb-20 text-white md:pt-40 md:pb-28">
-      <div className="absolute inset-0 opacity-20"
+    <section className="relative overflow-hidden bg-navy-900 pt-32 pb-20 text-white md:pt-40 md:pb-28">
+      <div className="absolute inset-0 bg-cover bg-center opacity-50"
         style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 20%, var(--color-gold-500) 0%, transparent 45%), radial-gradient(circle at 80% 80%, var(--color-navy-400) 0%, transparent 45%)",
+          backgroundImage: `url(${headerImg})`,
         }}
         aria-hidden="true"
       />

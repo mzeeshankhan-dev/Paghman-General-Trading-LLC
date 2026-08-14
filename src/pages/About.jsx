@@ -5,7 +5,8 @@ import PageHeader from "../components/ui/PageHeader";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
 import Counter from "../components/ui/Counter";
-// import { aboutStoryImage } from "../data/images";
+import GetQuote from "../components/ui/GetQuote";
+import aboutImg from "../assets/images/about-img.webp"
 
 export default function About() {
   const { t } = useTranslation();
@@ -25,12 +26,12 @@ export default function About() {
             <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">{t("about.story")}</p>
           </Reveal>
           <Reveal direction="right" className="overflow-hidden rounded-3xl bg-navy-500">
-            <img src="" alt="paghman trading company" loading="lazy" className="h-80 w-full object-cover" />
+            <img src={aboutImg} alt="paghman trading company" loading="lazy" className="h-80 w-full object-cover" />
           </Reveal>
         </div>
       </section>
 
-      <section className="section-y bg-slate-50 dark:bg-navy-900/40">
+      <section className="section-y bg-gray-200  dark:bg-navy-900/40">
         <div className="container-page grid gap-6 md:grid-cols-2">
           <Reveal className="card flex flex-col gap-4 p-9">
             <div className="flex gap-4 items-center">
@@ -68,35 +69,48 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section-y">
+      <section className="section-y bg-gray-200  dark:bg-navy-900/40">
         <div className="container-page grid gap-6 min-[900px]:grid-cols-[40%_55%]">
           <Reveal className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">Why Choose PAGHMAN?</h2>
             <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 "> Nam eligendi, ex quod cupiditate possimus sapiente eum accusamus inventore eaque laudantium perspiciatis nisi corporis vitae dicta fuga dolore sed autem maxime!</p>
-            <span className="flex gap-4"> 
-              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
-            </span>
-            <span  className="flex gap-4">
-              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
-            </span>
-            <span  className="flex gap-4">
-              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
-            </span>
-            <span  className="flex gap-4">
-              <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, explicabo.</p>
-            </span>
+
+            <div className="flex gap-4 items-center">
+              <span >
+                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
+            </div>
+
+            <div className="flex gap-4 items-center">
+              <span >
+                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+
+            <div className="flex gap-4 items-center">
+              <span >
+                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli</p>
+            </div>
+
+            <div className="flex gap-4 items-center">
+              <span >
+                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
+              </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing el</p>
+            </div>
+          
           </Reveal>
-          <Reveal className="bg-amber-600">
-               <h1>right side</h1>
+          <Reveal className="bg-amber-600 rounded-3xl [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)]">
+            <h1>right side</h1>
           </Reveal>
         </div>
       </section>
 
-      <section className="section-y bg-navy-900 text-white">
+      {/* <section className="section-y bg-navy-900 text-white">
         <div className="container-page">
           <SectionHeading title={t("about.statsTitle")} light />
           <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
@@ -110,7 +124,10 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      <GetQuote/>
 
     </>
   );
