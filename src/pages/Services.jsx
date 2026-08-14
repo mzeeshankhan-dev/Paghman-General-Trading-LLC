@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import Seo from "../components/ui/Seo";
 import PageHeader from "../components/ui/PageHeader";
 import ServiceCard from "../components/services/ServiceCard";
 import { serviceIcons } from "../data/icons";
 import CTASection from "../components/home/CTASection";
+import GetQuote from "../components/ui/GetQuote";
 
 export default function Services() {
   const { t } = useTranslation();
@@ -11,7 +11,6 @@ export default function Services() {
 
   return (
     <>
-      <Seo title={t("nav.services")} description={t("services.subtitle")} />
       <PageHeader eyebrow={t("services.eyebrow")} title={t("services.title")} subtitle={t("services.subtitle")} />
 
       <section className="section-y">
@@ -28,7 +27,7 @@ export default function Services() {
         </div>
       </section>
 
-      <CTASection />
+     <GetQuote/>
     </>
   );
 }

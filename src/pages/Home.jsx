@@ -12,6 +12,7 @@ import NewsSection from "../components/home/NewsSection";
 import CTASection from "../components/home/CTASection";
 import FreightCalculator from "../components/home/FreightCalculator";
 import CargoNetworkSVG from "../components/home/CargoNetworkSVG";
+import GetQuote from "../components/ui/GetQuote";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -27,8 +28,9 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <CargoNetworkSVG />
-      <CTASection />
+      <GetQuote bgColor="bg-white" />
 
+      {/* <CTASection /> */}
       {/* <FAQSection /> */}
       {/* <NewsSection /> */}
       {/* <ProductsPreview /> */}
