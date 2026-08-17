@@ -134,7 +134,16 @@
       { "title": "Import & Documentation", "desc": "Products are coordinated through the required import and trade procedures." },
       { "title": "Quality & Warehouse", "desc": "Products are received, checked and prepared for supply." },
       { "title": "Export & Delivery", "desc": "Orders are prepared for export and supplied to the intended market." }
-
+    ]
+  },
+    "workingProcess": {
+    "title": "How Aur Services Work",
+    "subtitle": "We handle every shipment with care—from cargo coordination to smooth import and export, ensuring reliable movement across global trade routes.",
+    "list": [
+      { "title": "Request Quote", "desc": "Share your cargo detailes with us." },
+      { "title": "Booking & Documentation.","desc": "We handle all paperwork."  },
+      { "title": "Transport", "desc": "Your cargo moves safely and on time." },
+      { "title": "Final Delivery", "desc": "Reasch your destination, hassle-free." }
     ]
   },
   "gallery": {

@@ -39,10 +39,5 @@ export const whyUsIcons = [
   Zap,
 ];
 
-export const industryIcons = [
-  ClipboardList,
-  Globe,
-  FileCheck2,
-  Package,
-  Truck,
-];
+export const industryIcons = [ClipboardList, Globe, FileCheck2, Package, Truck];
+export const ProcessIcon = [ClipboardList, Ship, Package, Truck];
