@@ -47,7 +47,7 @@ export default function ContactForm() {
   ];
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="card flex flex-col gap-5 p-7 sm:p-9">
+    <form onSubmit={handleSubmit} noValidate className="card flex flex-col gap-5 p-4 lg:p-7">
       <div className="grid gap-5 sm:grid-cols-2">
         {fields.map((field) => (
           <div key={field.id} className={field.id === "subject" ? "sm:col-span-2" : ""}>

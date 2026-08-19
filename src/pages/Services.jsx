@@ -6,7 +6,7 @@ import CTASection from "../components/home/CTASection";
 import GetQuote from "../components/ui/GetQuote";
 import { ProcessIcon } from "../data/icons";
 import { ArrowRight } from "lucide-react";
-import processImg from "../assets/images/workingProcessImg.png"
+import processImg from "../assets/images/paghmanp.webp"
 
 export default function Services() {
   const { t } = useTranslation();
@@ -60,7 +60,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="right relative">
+          <div className="right relative rounded-2xl overflow-hidden [clip-path:polygon(0_0,100%_0,100%_100%,0_100%)] max-[899px]:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]">
             <img src={processImg} alt="cargo connection map" className="w-full h-full object-cover" />
           </div>
 

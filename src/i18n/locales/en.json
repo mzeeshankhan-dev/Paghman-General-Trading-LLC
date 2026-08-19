@@ -201,8 +201,8 @@
   },
   "contact": {
     "eyebrow": "Contact Us",
-    "title": "Let's Start a Conversation",
-    "subtitle": "Reach out for quotes, sourcing enquiries or partnership opportunities — we typically respond within one business day.",
+    "title": "Contact Us",
+    "subtitle": "We're here to help you move your business forword",
     "form": {
       "name": "Full Name", "email": "Email Address", "phone": "Phone Number",
       "subject": "Subject", "message": "Message", "namePh": "John Smith",
