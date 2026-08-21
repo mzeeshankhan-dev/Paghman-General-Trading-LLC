@@ -103,7 +103,7 @@
   },
   "services": {
     "eyebrow": "Our Services",
-    "title": "End-to-End Trading Solutions",
+    "title": "Our Services",
     "subtitle": "From sourcing to final-mile delivery, we manage every link in your supply chain.",
     "list": [
       { "id": "import", "title": "Import", "desc": "Reliable import services with full customs documentation and compliance handling across the UAE." },
@@ -205,8 +205,8 @@
     "subtitle": "We're here to help you move your business forword",
     "form": {
       "name": "Full Name", "email": "Email Address", "phone": "Phone Number",
-      "subject": "Subject", "message": "Message", "namePh": "John Smith",
-      "emailPh": "john@company.com", "phonePh": "+971 50 000 0000",
+      "subject": "Subject", "message": "Message", "namePh": "Your Name",
+      "emailPh": "Your Email", "phonePh": "Your Phone (Optional)",
       "subjectPh": "Product enquiry, quote request, partnership...",
       "messagePh": "Tell us what you're looking for...",
       "success": "Thank you! Your message has been sent — we'll be in touch shortly.",

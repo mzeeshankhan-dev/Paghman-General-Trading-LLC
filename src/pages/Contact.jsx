@@ -4,6 +4,7 @@ import Seo from "../components/ui/Seo";
 import PageHeader from "../components/ui/PageHeader";
 import Reveal from "../components/ui/Reveal";
 import ContactForm from "../components/contact/ContactForm";
+import GetQuote from "../components/ui/GetQuote";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -63,14 +64,12 @@ export default function Contact() {
                   <p>Visit our head office or get in touch with our team for personalized assistance.</p>
                 </div>
 
-                {/* <div className="bg-gray-100 rounded-xl px-5 py-2 mt-5 flex justify-between items-center dark:bg-navy-700"> */}
-                  <a className=" font-semibold bg-gray-100 rounded-xl px-5 py-2 mt-5 flex items-center justify-center gap-3 dark:bg-navy-700"
+                  <a className=" font-semibold bg-gray-100 rounded-xl px-5 py-2 mt-5 flex items-center justify-center gap-3npmru dark:bg-navy-700"
                   href="">
                     <MapPin className="h-8 w-8 text-navy-900 dark:text-white" aria-hidden="true" />
                     View on Map
                   </a>
 
-                {/* </div */}
               </Reveal>
               <Reveal>
                 <a
@@ -88,6 +87,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <GetQuote bgColor="bg-white" />
     </>
   );
 }

@@ -58,16 +58,15 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-navy-950 text-white/70">
-      <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] bg-cover bg-center bg-no-repeat"
-        style={{
+    <footer className=" text-white/70" style={{
 
-          backgroundImage: `      linear-gradient(
+      backgroundImage: `      linear-gradient(
         to right,
         rgba(7, 29, 54, 0.9),
         rgba(7, 29, 54, 0.4)
       ), url(${footerImg})`,
-        }}>
+    }}>
+      <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr] bg-cover bg-center bg-no-repeat">
         <div className="flex flex-col gap-4">
           <Link to="/" className="flex items-center gap-2.5">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-500 text-navy-900">

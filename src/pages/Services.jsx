@@ -34,14 +34,14 @@ export default function Services() {
 
       <section className="section-y bg-gray-200 dark:bg-navy-900">
 
-        <div className="container-page grid grid-cols-[60%_40%]">
+        <div className="container-page grid gap-4 grid-cols-[60%_40%] max-[900px]:grid-cols-1">
 
           <div className="left flex flex-col gap-8">
             <div className="l-title">
               <h2 className="text-3xl font-bold text-navy-900 dark:text-white">{t("workingProcess.title")}</h2>
               <p className=" mt-2">{t("workingProcess.subtitle")}</p>
             </div>
-            <div className="process flex flex-wrap gap-1">
+            <div className="process flex flex-wrap gap-1 justify-center">
               {workingProcess.map((item, idx) => {
                 const Icon = ProcessIcon[idx];
                 return (
