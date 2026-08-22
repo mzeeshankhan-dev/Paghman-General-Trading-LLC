@@ -4,7 +4,7 @@ import paghmanNet from "../../assets/images/PaghmanNet.svg"
 const CargoNetworkSVG = () => {
   return (
     <section>
-        <div className="svg-ctr relative">
+        <div className="svg-ctr relative mb-8">
             <img src={paghmanNet} alt="Paghman network img" />
             <div className=' absolute w-full h-full inset-0 dark:bg-black/30'></div>
         </div>

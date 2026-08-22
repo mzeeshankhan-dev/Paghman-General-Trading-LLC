@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import PageHeader from "../components/ui/PageHeader";
 import ServiceCard from "../components/services/ServiceCard";
 import { serviceIcons } from "../data/icons";
-import CTASection from "../components/home/CTASection";
 import GetQuote from "../components/ui/GetQuote";
 import { ProcessIcon } from "../data/icons";
 import { ArrowRight } from "lucide-react";

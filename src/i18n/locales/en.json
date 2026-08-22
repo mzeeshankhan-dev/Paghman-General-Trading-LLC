@@ -136,6 +136,17 @@
       { "title": "Export & Delivery", "desc": "Orders are prepared for export and supplied to the intended market." }
     ]
   },
+  "whyChoosePaghman":{
+    "title": "Why Choose PAGHMAN?",
+    "desc": "Nam eligendi, ex quod cupiditate possimus sapiente eum accusamus inventore eaque laudantium perspiciatis nisi corporis vitae dicta fuga dolore sed autem maxime!",
+    "list":[
+      {"spec": "Global Network & Reliable Route Coverage"},
+      {"spec": "Real-Time Cargo Tracking & Updates"},
+      {"spec": "Secure Handling & Regulatory Compliance"},
+      {"spec": "Expert Customer Support 24/7"},
+      {"spec": "Competitive & Transparent Pricing"}
+    ]
+  },
     "workingProcess": {
     "title": "How Aur Services Work",
     "subtitle": "We handle every shipment with care—from cargo coordination to smooth import and export, ensuring reliable movement across global trade routes.",
@@ -148,7 +159,7 @@
   },
   "gallery": {
     "eyebrow": "Our Gallery",
-    "title": "A Glimpse Into Our Operations",
+    "title": "Gallery",
     "subtitle": "From our Dubai warehouses to the ports we ship through — see our trading network in action."
   },
   "testimonials": {

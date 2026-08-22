@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { X, ZoomIn } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Seo from "../components/ui/Seo";
 import PageHeader from "../components/ui/PageHeader";
 import Reveal from "../components/ui/Reveal";
 import { galleryImages } from "../data/images";
@@ -13,7 +12,6 @@ export default function Gallery() {
 
   return (
     <>
-      <Seo title={t("nav.gallery")} description={t("gallery.subtitle")} />
       <PageHeader eyebrow={t("gallery.eyebrow")} title={t("gallery.title")} subtitle={t("gallery.subtitle")} />
 
       <section className="section-y">
@@ -28,7 +26,7 @@ export default function Gallery() {
               >
                 <img
                   src={src}
-                  alt={`Al Mawarid trading operations, photo ${index + 1}`}
+                  alt={`Paghman trading operations, photo ${index + 1}`}
                   loading="lazy"
                   className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
@@ -47,7 +45,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-navy-950/90 p-6"
+            className="fixed inset-0 z-60 flex items-center justify-center bg-navy-950/90 p-6"
             role="dialog"
             aria-modal="true"
             onClick={() => setSelected(null)}
@@ -64,7 +62,7 @@ export default function Gallery() {
               type="button"
               onClick={() => setSelected(null)}
               aria-label="Close image"
-              className="absolute end-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
+              className="absolute inset-e-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20"
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>

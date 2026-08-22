@@ -15,10 +15,14 @@ import {
   Globe,
   FileCheck2,
   Package,
-  HeartPulse,
-  Car,
-  Wheat,
-  Gauge,
+  GlobeIcon,
+  FilePenLine,
+  ShieldCheckIcon,
+  ShieldUser,
+  Flower,
+  ClockCheck,
+  Handshake,
+  Award,
 } from "lucide-react";
 
 export const serviceIcons = {
@@ -41,3 +45,5 @@ export const whyUsIcons = [
 
 export const industryIcons = [ClipboardList, Globe, FileCheck2, Package, Truck];
 export const ProcessIcon = [ClipboardList, Ship, Package, Truck];
+export const whyChooseIcon =[GlobeIcon, FilePenLine, ShieldCheckIcon,ShieldUser, Flower]
+export const coreValuesIcon =[ShieldCheck, ClockCheck, Handshake, Award]

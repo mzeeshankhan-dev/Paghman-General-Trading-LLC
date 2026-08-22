@@ -4,15 +4,16 @@ import Seo from "../components/ui/Seo";
 import PageHeader from "../components/ui/PageHeader";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
-import Counter from "../components/ui/Counter";
 import GetQuote from "../components/ui/GetQuote";
 import aboutImg from "../assets/images/about-img.webp"
 import whyChooseImg from "../assets/images/whyChooseImg.webp"
-
+import { whyChooseIcon } from "../data/icons"
+import { coreValuesIcon } from "../data/icons"
 
 export default function About() {
   const { t } = useTranslation();
   const values = t("about.values", { returnObjects: true }) || [];
+  const whyChooseList = t("whyChoosePaghman.list", { returnObjects: true }) || [];
   const timeline = t("about.timeline", { returnObjects: true }) || [];
   const stats = t("hero.stats", { returnObjects: true }) || [];
 
@@ -60,13 +61,15 @@ export default function About() {
         <div className="container-page">
           <SectionHeading title={t("about.valuesTitle")} />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((value, index) => (
-              <Reveal key={value.title} delay={index * 0.08} className="card flex flex-col gap-3 p-6 text-center items-center">
-                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-                <h3 className="font-heading text-base font-semibold text-navy-900 dark:text-white">{value.title}</h3>
-                <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">{value.desc}</p>
-              </Reveal>
-            ))}
+            {values.map((value, index) => {
+              const Icon = coreValuesIcon[index];
+              return (
+                <Reveal key={value.title} delay={index * 0.08} className="card flex flex-col gap-3 p-6 text-center items-center">
+                  <Icon className="h-8 w-8 text-gold-500" aria-hidden="true" />
+                  <h3 className="font-heading text-base font-semibold text-navy-900 dark:text-white">{value.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-500 dark:text-slate-400">{value.desc}</p>
+                </Reveal>)
+            })}
           </div>
         </div>
       </section>
@@ -74,62 +77,29 @@ export default function About() {
       <section className="section-y bg-gray-200  dark:bg-navy-900/40">
         <div className="container-page grid gap-6 min-[900px]:grid-cols-[40%_55%]">
           <Reveal className="flex flex-col gap-4">
-            <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">Why Choose PAGHMAN?</h2>
-            <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 "> Nam eligendi, ex quod cupiditate possimus sapiente eum accusamus inventore eaque laudantium perspiciatis nisi corporis vitae dicta fuga dolore sed autem maxime!</p>
+            <h2 className="text-3xl font-bold tracking-tight text-navy-900 dark:text-white">{t("whyChoosePaghman.title")}</h2>
+            <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 ">{t("whyChoosePaghman.desc")}</p>
+            {whyChooseList.map((item, idx) => {
+              const Icon = whyChooseIcon[idx];
+              return (
+                <div className="flex gap-4 items-center">
+                  <span >
+                    <Icon className="h-8 w-8 text-gold-500" aria-hidden="true" />
+                  </span>
+                  <p>{item.spec}</p>
+                </div>
+              )
+            })}
 
-            <div className="flex gap-4 items-center">
-              <span >
-                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
-            </div>
-
-            <div className="flex gap-4 items-center">
-              <span >
-                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
-            </div>
-
-            <div className="flex gap-4 items-center">
-              <span >
-                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing eli</p>
-            </div>
-
-            <div className="flex gap-4 items-center">
-              <span >
-                <CheckCircle2 className="h-8 w-8 text-gold-500" aria-hidden="true" />
-              </span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing el</p>
-            </div>
-          
           </Reveal>
           <Reveal className="rounded-3xl overflow-hidden [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)] max-[899px]:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)] max-[899px]:max-h-80">
-            <img  src={whyChooseImg} alt="paghman cargo" loading="lazy" className="w-full h-full object-cover" />
+            <img src={whyChooseImg} alt="paghman cargo" loading="lazy" className="w-full h-full object-cover" />
           </Reveal>
         </div>
       </section>
 
-      {/* <section className="section-y bg-navy-900 text-white">
-        <div className="container-page">
-          <SectionHeading title={t("about.statsTitle")} light />
-          <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="font-heading text-4xl font-bold text-gold-400">
-                  <Counter value={stat.value} suffix={stat.suffix} />
-                </div>
-                <p className="mt-2 text-xs font-medium uppercase tracking-wider text-white/60">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
-
-      <GetQuote/>
+      <GetQuote />
 
     </>
   );
