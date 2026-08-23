@@ -51,24 +51,24 @@ export default function Contact() {
 
             <div className="location-map card flex flex-col gap-8 bg-white shadow-sm p-4 lg:p-7">
               <Reveal className="overflow-hidden">
-                <div className="relative flex h-64 items-center justify-center bg-slate-100 dark:bg-navy-900" role="img" aria-label="Map showing Al Mawarid office location in Dubai">
-                  <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "linear-gradient(45deg, var(--color-navy-200) 25%, transparent 25%), linear-gradient(-45deg, var(--color-navy-200) 25%, transparent 25%)", backgroundSize: "24px 24px" }} />
-                  <div className="relative flex flex-col items-center gap-2 text-navy-500 dark:text-slate-400">
-                    <MapPin className="h-8 w-8 text-gold-500" aria-hidden="true" />
-                    <p className="text-sm font-medium">Sheikh Zayed Road, Dubai, UAE</p>
-                    <p className="text-xs">Interactive map placeholder — embed Google Maps here</p>
+                <div className="relative flex h-64 items-center justify-center bg-slate-100 dark:bg-navy-900" role="img" aria-label="Map showing Paghman office location in Dubai">
+                  <div className="absolute inset-0">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.779699817454!2d55.340086774024044!3d25.176915432524527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67c008cf3085%3A0x34b429a2e3db300!2sPAGHMAN%20GENERAL%20TRADING%20LLC%20WARE%20HOUSE!5e0!3m2!1sen!2s!4v1787417318536!5m2!1sen!2s"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      title="Office Location"
+                    />
                   </div>
                 </div>
                 <div className="mt-5">
-                  <h3 className=" text-2xl font-bold">Our Location</h3>
-                  <p>Visit our head office or get in touch with our team for personalized assistance.</p>
+                  <h3 className=" text-2xl font-bold">{t("contact.info.locationH")}</h3>
+                  <p>{t("contact.info.locationDesc")}</p>
                 </div>
-
-                  <a className=" font-semibold bg-gray-100 rounded-xl px-5 py-2 mt-5 flex items-center justify-center gap-3npmru dark:bg-navy-700"
-                  href="">
-                    <MapPin className="h-8 w-8 text-navy-900 dark:text-white" aria-hidden="true" />
-                    View on Map
-                  </a>
 
               </Reveal>
               <Reveal>

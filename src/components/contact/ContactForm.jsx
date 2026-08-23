@@ -49,8 +49,8 @@ export default function ContactForm() {
 
   return (
     <div className="card p-4 lg:p-7">
-      <h1 className="text-navy-950 text-3xl font-bold">Get In Touch</h1>
-      <p className="mt-1">Drop us a message and our team will get back to you as soon as possible. </p>
+      <h1 className="text-navy-950 text-3xl font-bold">{t("contact.form.heading")}</h1>
+      <p className="mt-1">{t("contact.form.desc")}</p>
       <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4 mt-4 ">
         <div className="flex flex-col gap-3">
           {fields.map((field) => (

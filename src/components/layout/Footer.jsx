@@ -92,7 +92,7 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">{t("footer.quickLinks")}</h3>
           <ul className="flex flex-col gap-2.5 text-sm">
-            {["home", "about", "products", "services", "industries", "contact"].map((key) => (
+            {["home", "about", "services","gallery", "contact"].map((key) => (
               <li key={key}>
                 <Link to={key === "home" ? "/" : `/${key}`} className="transition-colors hover:text-gold-400">
                   {t(`nav.${key}`)}

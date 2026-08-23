@@ -5,7 +5,6 @@ import { ArrowRight, Calculator, RotateCcw } from "lucide-react";
 import { additionalCharges, calculatorSettings, countries, freightRates, shipmentTypes, } from "../../data/freightRates";
 
 export default function FreightCalculator() {
-
     const { t } = useTranslation();
 
     const [formData, setFormData] = useState({
@@ -42,7 +41,7 @@ export default function FreightCalculator() {
         setResult(null);
 
         if (!formData.shipmentType || !formData.origin || !formData.destination) {
-            setError("Please select shipment type, origin and destination.");
+            setError(t("calculator.error"));
             return;
         }
 
@@ -142,7 +141,7 @@ export default function FreightCalculator() {
                         <div className="grid gap-4 sm:grid-cols-2">
                             <div>
                                 <label htmlFor="shipmentType" className=" mb-1.5 block text-sm font-medium text-[#111827] ">
-                                    Shipment Type
+                                    {t("calculator.shipmentType")}
                                 </label>
 
                                 <select id="shipmentType" name="shipmentType" value={formData.shipmentType} onChange={handleChange}
@@ -158,7 +157,7 @@ export default function FreightCalculator() {
 
                             <div>
                                 <label htmlFor="origin" className=" mb-1.5 block text-sm font-medium text-[#111827] " >
-                                    Origin Country
+                                    {t("calculator.OriginC")}
                                 </label>
 
                                 <select id="origin" name="origin" value={formData.origin} onChange={handleChange}
@@ -175,7 +174,7 @@ export default function FreightCalculator() {
 
                         <div>
                             <label htmlFor="destination" className=" mb-1.5 block text-sm font-medium text-[#111827] " >
-                                Destination Country
+                                {t("calculator.destinationC")}
                             </label>
 
                             <select id="destination" name="destination" value={formData.destination} onChange={handleChange}
@@ -192,7 +191,7 @@ export default function FreightCalculator() {
                         <div className="grid gap-4 sm:grid-cols-2">
                             <div>
                                 <label htmlFor="weight" className=" mb-1.5 block text-sm font-medium text-[#111827]" >
-                                    Weight (kg)
+                                    {t("calculator.weight")}
                                 </label>
 
                                 <input id="weight" name="weight" type="number" min="0" step="0.01" value={formData.weight}
@@ -203,7 +202,7 @@ export default function FreightCalculator() {
 
                             <div>
                                 <label htmlFor="volume" className=" mb-1.5 block text-sm font-medium text-[#111827] " >
-                                    Volume (CBM)
+                                    {t("calculator.volume")}
                                 </label>
 
                                 <input id="volume" name="volume" type="number" min="0" step="0.01" value={formData.volume}
@@ -221,7 +220,7 @@ export default function FreightCalculator() {
                         )}
 
                         <button type="submit" className=" flex h-11 w-full items-center justify-center gap-2 rounded-md bg-gold-500  px-4 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#ea580c] active:scale-[0.99] " >
-                            Calculate Estimated Rate
+                            {t("calculator.btn")}
                             <ArrowRight size={17} />
                         </button>
                     </form>
@@ -293,9 +292,7 @@ export default function FreightCalculator() {
                 </div>
 
                 <p className=" mt-3 text-center text-[11px] leading-5 text-slate-400 ">
-                    Estimated rates are for reference only. Final pricing may vary
-                    according to cargo specifications, route, applicable charges and
-                    confirmation by Paghman.
+                    {t("calculator.calculateDesc")}
                 </p>
             </div>
         </section>

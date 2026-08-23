@@ -172,6 +172,16 @@
       { "name": "Layla Haddad", "role": "Founder, Beirut Boutique", "text": "A dependable wholesale partner who genuinely cares about our business growing." }
     ]
   },
+  "calculator":{
+   "shipmentType": "Shipment Type",
+   "OriginC": "Origin Country",
+   "destinationC": "Destination Country",
+   "weight": "Weight (kg)" ,
+   "volume": "Volume (CBM)",
+   "btn": "CALCULATE ESTIMATED RATE",
+   "calculateDesc": "Estimated rates are for reference only. Final pricing may vary according to cargo specifications, route, applicable charges and confirmation by Paghman.",
+   "error":"Please select shipment type, origin and destination."
+   },
   "faq": {
     "list": [
       { "q": "Which regions does Al Mawarid ship to?", "a": "We currently ship to over 45 countries across the GCC, South Asia, Africa, Europe and beyond." },
@@ -215,6 +225,8 @@
     "title": "Contact Us",
     "subtitle": "We're here to help you move your business forword",
     "form": {
+      "heading":"Get In Touch",
+      "desc":"Drop us a message and our team will get back to you as soon as possible.",
       "name": "Full Name", "email": "Email Address", "phone": "Phone Number",
       "subject": "Subject", "message": "Message", "namePh": "Your Name",
       "emailPh": "Your Email", "phonePh": "Your Phone (Optional)",
@@ -224,23 +236,28 @@
       "error": "Something went wrong. Please try again or contact us directly."
     },
     "info": {
-      "addressTitle": "Office Address", "address": "Office 1204, Al Mawarid Tower, Sheikh Zayed Road, Dubai, UAE",
-      "emailTitle": "Email Us", "email": "info@almawaridtrading.com",
-      "phoneTitle": "Call Us", "phone": "+971 4 000 0000",
-      "hoursTitle": "Working Hours", "hours": "Sunday – Thursday, 9:00 AM – 6:00 PM"
+      "addressTitle": "Office Address", "address": "Office 205, 2nd Floor, China Building Material Tower, A Block, Baniyas, Deira, Dubai, UAE",
+      "emailTitle": "Email Us", "email": "paghmantrading@yahoo.com",
+      "phoneTitle": "Call Us", "phone": "+971503421262",
+      "hoursTitle": "Working Hours", "hours": "Monday – Saturday, 9:00 AM – 6:00 PM",
+
+      "locationH":"Our Location",
+      "locationDesc":"Visit our head office or get in touch with our team for personalized assistance."
     },
     "whatsapp": "Chat on WhatsApp"
   },
   "footer": {
     "about": "A Dubai-based general trading company delivering textiles, garments, food products, industrial and electrical supplies to partners across the globe.",
     "quickLinks": "Quick Links", "ourServices": "Services", "ourProducts": "Products",
-    "newsletterTitle": "Subscribe to Our Newsletter",
-    "newsletterText": "Get the latest updates on products, services and industry news.",
-    "newsletterPh": "Enter your email", "subscribe": "Subscribe",
     "rights": "All rights reserved."
   },
   "notFound": {
     "title": "Page Not Found", "subtitle": "The page you're looking for doesn't exist or has been moved.",
     "cta": "Back to Homepage"
+  },
+  "getQuote":{
+    "heading":"Let's Grow Your Business Together",
+    "info":"PAGHMAN Cargo - Tour Trusted Logistics Partner",
+    "btn":"Get Your Quote"
   }
 }
