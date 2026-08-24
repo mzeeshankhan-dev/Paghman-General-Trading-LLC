@@ -7,7 +7,7 @@ const GetQuote = ({ bgColor = "bg-gray-200" }) => {
     const { t } = useTranslation();
 
     return (
-        <div className={`px-12 w-full pb-6 ${bgColor} dark:bg-navy-900`}>
+        <div className={`px-5 sm:px-8 lg:px-12 w-full pb-6 ${bgColor} dark:bg-navy-900`}>
             <div className="px-8 py-3 max-w-300 mx-auto bg-navy-600 rounded-2xl flex justify-between items-center max-[800px]:flex-col gap-4 max-[800px]:gap-6 max-[800px]:text-center ">
                 <span className='flex items-center gap-8 max-[800px]:flex-col max-[800px]:gap-4'>
                     <span className='p-4 bg-navy-800 rounded-full'>

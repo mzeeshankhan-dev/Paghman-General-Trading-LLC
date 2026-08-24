@@ -51,7 +51,7 @@ export default function Services() {
                     <h3 className="text-sm font-semibold text-navy-900 dark:text-white">{idx + 1}. {t(item.title)}</h3>
                     <p>{t(item.desc)}</p>
                     {idx !== workingProcess.length - 1 && (
-                      <ArrowRight size={32} className="absolute top-2 -right-4 text-navy-400" />
+                      <ArrowRight size={32} className="absolute top-2 -right-4 text-navy-400 rtl:scale-x-[-1] rtl:right-[90%]" />
                     )}
                   </div>
                 )

@@ -92,7 +92,7 @@ export default function About() {
             })}
 
           </Reveal>
-          <Reveal className="rounded-3xl overflow-hidden [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)] max-[899px]:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)] max-[899px]:max-h-80">
+          <Reveal className="rounded-3xl overflow-hidden [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)] max-[899px]:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)] max-[899px]:max-h-80 rtl:scale-x-[-1]">
             <img src={whyChooseImg} alt="paghman cargo" loading="lazy" className="w-full h-full object-cover" />
           </Reveal>
         </div>

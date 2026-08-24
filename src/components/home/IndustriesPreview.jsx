@@ -26,7 +26,7 @@ export default function IndustriesPreview() {
                 <h3 className="text-sm font-semibold text-navy-900 dark:text-white">{item.title}</h3>
                 <p>{item.desc}</p>
                 {index !== items.length - 1 && (
-                  <ArrowRight size={32} className="absolute right-0 top-[13%] text-gold-600 " />
+                  <ArrowRight size={32} className="absolute right-0 top-[13%] text-gold-600 rtl:scale-x-[-1] rtl:top-[13%] rtl:right-[85%]" />
                 )}
               </Reveal>
             );

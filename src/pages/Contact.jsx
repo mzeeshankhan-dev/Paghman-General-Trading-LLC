@@ -25,14 +25,14 @@ export default function Contact() {
         <div className="container-page flex flex-col gap-8">
           <div className="flex flex-col gap-8">
             <div className="grid gap-4 grid-cols-1 min-[460px]:grid-cols-2  min-[950px]:grid-cols-4  text-center">
-              {infoCards.map((card) => (
+              {infoCards.map((card, idx) => (
                 <Reveal key={card.title} className="card flex flex-col gap-3 p-6 items-center">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-navy-800 text-gold-400">
                     <card.icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <h3 className="text-sm font-semibold text-navy-900 dark:text-white">{card.title}</h3>
-                  {card.href ? (
-                    <a href={card.href} className="text-sm text-slate-500 hover:text-gold-600 dark:text-slate-400">
+                  {card.href && idx === 1 ? (
+                    <a  href={card.href} dir="ltr" className='text-sm text-slate-500 hover:text-gold-600 dark:text-slate-400'>
                       {card.value}
                     </a>
                   ) : (

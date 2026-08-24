@@ -197,7 +197,7 @@ export default function FreightCalculator() {
                                 <input id="weight" name="weight" type="number" min="0" step="0.01" value={formData.weight}
                                     onChange={handleChange}
                                     placeholder="Enter weight"
-                                    className=" w-full rounded-md border border-slate-200 h-11 bg-white px-3 text-sm text-slate-700 outline-none placeholder:text-slate-400 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20 " />
+                                    className=" w-full rounded-md border border-slate-200 h-11 bg-white px-3 text-sm text-slate-700 outline-none placeholder:text-slate-400 focus:border-[#f97316] focus:ring-2 focus:ring-[#f97316]/20" />
                             </div>
 
                             <div>
@@ -221,7 +221,7 @@ export default function FreightCalculator() {
 
                         <button type="submit" className=" flex h-11 w-full items-center justify-center gap-2 rounded-md bg-gold-500  px-4 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#ea580c] active:scale-[0.99] " >
                             {t("calculator.btn")}
-                            <ArrowRight size={17} />
+                            <ArrowRight size={17} className="rtl:scale-x-[-1]" />
                         </button>
                     </form>
 
