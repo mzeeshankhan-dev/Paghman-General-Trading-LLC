@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="location-map card flex flex-col gap-8 bg-white shadow-sm p-4 lg:p-7">
               <Reveal className="overflow-hidden">
                 <div className="relative flex h-64 items-center justify-center bg-slate-100 dark:bg-navy-900" role="img" aria-label="Map showing Paghman office location in Dubai">
-                  <div className="absolute inset-0">
+                  <div className="absolute inset-0 rounded-2xl overflow-hidden">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.779699817454!2d55.340086774024044!3d25.176915432524527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67c008cf3085%3A0x34b429a2e3db300!2sPAGHMAN%20GENERAL%20TRADING%20LLC%20WARE%20HOUSE!5e0!3m2!1sen!2s!4v1787417318536!5m2!1sen!2s"
                       width="100%"

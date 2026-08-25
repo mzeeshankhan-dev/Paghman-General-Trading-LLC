@@ -13,7 +13,7 @@ export default function AboutPreview() {
       <div className="container-page grid items-center gap-12 lg:grid-cols-2">
         <Reveal direction="right" className="relative">
           <div className="overflow-hidden rounded-3xl">
-            <img src={aboutImage} alt="Team at Al Mawarid General Trading" loading="lazy" className="h-105 w-full object-cover" />
+            <img src={aboutImage} alt="Team at Paghman General Trading" loading="lazy" className="h-105 w-full object-cover" />
           </div>
           <div className="absolute -bottom-6 -start-s-6 hidden rounded-2xl bg-gold-500 px-6 py-5 text-navy-900 shadow-xl sm:block">
             <p className="font-heading text-3xl font-bold">25+</p>

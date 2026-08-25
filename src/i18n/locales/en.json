@@ -68,7 +68,7 @@
       { "year": "2019", "title": "New Product Lines", "desc": "Added industrial supplies and electrical products to our portfolio." },
       { "year": "2024", "title": "Global Reach", "desc": "Now serving clients in over 45 countries across five continents." }
     ],
-    "statsTitle": "Al Mawarid in Numbers"
+    "statsTitle": "PAGHMAN in Numbers"
   },
   "products": {
     "eyebrow": "Our Products",
@@ -164,7 +164,7 @@
   },
   "testimonials": {
     "list": [
-      { "name": "Ahmed Al Farsi", "role": "Procurement Director, Riyadh", "text": "Al Mawarid has been our textile supplier for six years. Consistent quality and always on schedule." },
+      { "name": "Ahmed Al Farsi", "role": "Procurement Director, Riyadh", "text": "PAGHMAN has been our textile supplier for six years. Consistent quality and always on schedule." },
       { "name": "Sara Khan", "role": "Retail Buyer, Karachi", "text": "Their sourcing team found us exactly the garment specifications we needed, faster than any competitor." },
       { "name": "James Whitfield", "role": "Distribution Manager, London", "text": "Professional, transparent, and easy to work with across every shipment we've placed." },
       { "name": "Fatima Noor", "role": "Operations Head, Nairobi", "text": "Their logistics team handled complex customs requirements flawlessly. Highly recommended." },
@@ -184,7 +184,7 @@
    },
   "faq": {
     "list": [
-      { "q": "Which regions does Al Mawarid ship to?", "a": "We currently ship to over 45 countries across the GCC, South Asia, Africa, Europe and beyond." },
+      { "q": "Which regions does Paghman ship to?", "a": "We currently ship to over 45 countries across the GCC, South Asia, Africa, Europe and beyond." },
       { "q": "What is your minimum order quantity?", "a": "MOQs vary by product category — our sales team will confirm exact figures based on your requirements." },
       { "q": "Do you offer custom sourcing?", "a": "Yes, our global sourcing team can locate and vet manufacturers for specifications not in our standard catalogue." },
       { "q": "How long does shipping typically take?", "a": "Lead times depend on the destination and shipping method, ranging from 5 days by air to 6 weeks by sea." },
@@ -194,7 +194,7 @@
   },
   "news": {
     "list": [
-      { "title": "Al Mawarid Expands Warehouse Capacity in Jebel Ali", "date": "May 2026", "excerpt": "New 10,000 sqm facility increases our storage and distribution capability across the GCC." },
+      { "title": "PAGHMAN Expands Warehouse Capacity in Jebel Ali", "date": "May 2026", "excerpt": "New 10,000 sqm facility increases our storage and distribution capability across the GCC." },
       { "title": "New Electrical Products Line Launched", "date": "March 2026", "excerpt": "We've added certified cabling and lighting solutions to serve the energy and construction sectors." },
       { "title": "Partnership with South Asian Textile Mills", "date": "January 2026", "excerpt": "A new sourcing agreement strengthens our textile supply chain and pricing competitiveness." }
     ]
@@ -203,7 +203,7 @@
     "eyebrow": "Careers",
     "title": "Build Your Career With Us",
     "subtitle": "We're always looking for talented, driven people to join our growing trading house.",
-    "whyJoinTitle": "Why Work at Al Mawarid",
+    "whyJoinTitle": "Why Work at PAGHMAN",
     "whyJoin": [
       { "title": "Global Exposure", "desc": "Work with partners and clients across 45+ countries." },
       { "title": "Growth Opportunities", "desc": "Clear career paths and internal promotion across departments." },

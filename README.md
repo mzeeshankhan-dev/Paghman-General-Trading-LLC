@@ -1,4 +1,4 @@
-# Al Mawarid General Trading LLC — Corporate Website
+# PAGHMAN General Trading LLC — Corporate Website
 
 A premium, production-ready corporate website for a Dubai-based international trading
 company, built with **React 19**, **Vite**, and **Tailwind CSS v4**.

@@ -13,7 +13,7 @@ export default function ProductCard({ title, desc, image, delay = 0 }) {
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-navy-950/60 via-transparent to-transparent" />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
         <h3 className="font-heading text-lg font-semibold text-navy-900 dark:text-white">{title}</h3>

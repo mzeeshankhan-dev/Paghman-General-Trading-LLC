@@ -50,7 +50,7 @@ export default function Navbar({ theme, toggleTheme }) {
       }`}
     >
       <nav className="container-page flex h-20 items-center justify-between" aria-label="Main navigation">
-        <NavLink to="/" className="flex items-center gap-2.5 shrink-0" aria-label="Al Mawarid General Trading LLC — Home">
+        <NavLink to="/" className="flex items-center gap-2.5 shrink-0" aria-label="PaghmanGeneral Trading LLC — Home">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-navy-800 text-gold-400 dark:bg-gold-500 dark:text-navy-900 overflow-hidden">
             <img className="h-full w-full"  src="./logo.png" alt="logo" />
           </span>
