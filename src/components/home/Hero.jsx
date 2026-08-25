@@ -1,11 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import { motion } from "framer-motion";
 import Counter from "../ui/Counter";
-import { heroSlides } from "../../data/images";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { useEffect, useState } from "react";
@@ -38,7 +35,6 @@ export default function Hero() {
 
   return (
     <section className="relative flex min-h-[90vh] text-white">
-      {/* Background Video */}
       <video
         autoPlay
         loop
@@ -46,7 +42,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 h-full w-screen object-cover max-[600px]:object-[10%_center]"
       >
-        <source src="/Hero-video.mp4" type="video/mp4" />
+        <source src="/Hero-video.webm" type="video/webm" />
       </video>
 
       <div className="container-page pt-20 relative flex flex-col items-center">

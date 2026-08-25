@@ -5,7 +5,7 @@ import PageHeader from "../components/ui/PageHeader";
 import SectionHeading from "../components/ui/SectionHeading";
 import Reveal from "../components/ui/Reveal";
 import GetQuote from "../components/ui/GetQuote";
-import aboutImg from "../assets/images/about-img.webp"
+import aboutImg from "../assets/images/about-Img.webp"
 import whyChooseImg from "../assets/images/whyChooseImg.webp"
 import { whyChooseIcon } from "../data/icons"
 import { coreValuesIcon } from "../data/icons"
@@ -14,8 +14,6 @@ export default function About() {
   const { t } = useTranslation();
   const values = t("about.values", { returnObjects: true }) || [];
   const whyChooseList = t("whyChoosePaghman.list", { returnObjects: true }) || [];
-  const timeline = t("about.timeline", { returnObjects: true }) || [];
-  const stats = t("hero.stats", { returnObjects: true }) || [];
 
   return (
     <>

@@ -5,7 +5,7 @@ import { serviceIcons } from "../data/icons";
 import GetQuote from "../components/ui/GetQuote";
 import { ProcessIcon } from "../data/icons";
 import { ArrowRight } from "lucide-react";
-import processImg from "../assets/images/paghmanp.webp"
+import processImg from "../assets/images/paghmanP.webp"
 
 export default function Services() {
   const { t } = useTranslation();
