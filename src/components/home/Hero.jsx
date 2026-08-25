@@ -63,7 +63,7 @@ export default function Hero() {
           <p className=" text-center mt-4 text-xl leading-relaxed text-white/90">{t("hero.subtitle")}</p>
 
           <div className="mt-6 flex flex-wrap gap-4 justify-center">
-            <Link to="/products" className="btn-primary">
+            <Link to="/services" className="btn-primary">
               {t("common.exploreProducts")}
               <ArrowRight className="h-4 w-4 rtl-flip" aria-hidden="true" />
             </Link>
